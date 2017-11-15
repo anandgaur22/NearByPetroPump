@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:dividerPadding="5dp"
+    android:padding="10sp"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/placename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Petrol Pump Name"
+            android:layout_margin="2dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#101010" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placename"
+            android:layout_margin="4dp"
+            android:text="Petrol Pump address Sec-63 Noida-201301"
+            android:textColor="#344aed"/>
+
+
+        <LinearLayout
+            android:id="@+id/llss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/address">
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="25sp"
+                android:text="1.6 km"
+                android:textColor="#8f4804"
+                />
+            <TextView
+                android:id="@+id/txtViewRating"
+                android:layout_width="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="25sp"
+                android:text="Rating"
+                android:textColor="#0b0b0b"
+                />
+
+
+            <ImageView
+                android:id="@+id/imgViewroute"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_near_me" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llqq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/llss"
+            android:layout_margin="0dp">
+            <TextView
+                android:id="@+id/txtViewAway"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Away"
+                android:gravity="center"
+                android:textColor="#031503" />
+
+            <TextView
+                android:id="@+id/txtViewRating_views"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textColor="#1e1c9e" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
